@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.VentanaUsuarios = new System.Windows.Forms.Button();
+            this.buttonViaticos = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -55,25 +55,30 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // VentanaUsuarios
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(15, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 154);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.VentanaUsuarios.BackColor = System.Drawing.SystemColors.Control;
+            this.VentanaUsuarios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VentanaUsuarios.BackgroundImage")));
+            this.VentanaUsuarios.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.VentanaUsuarios.Location = new System.Drawing.Point(15, 25);
+            this.VentanaUsuarios.Name = "VentanaUsuarios";
+            this.VentanaUsuarios.Size = new System.Drawing.Size(127, 154);
+            this.VentanaUsuarios.TabIndex = 1;
+            this.VentanaUsuarios.UseVisualStyleBackColor = false;
+            this.VentanaUsuarios.Click += new System.EventHandler(this.button1_Click);
+            this.VentanaUsuarios.MouseHover += new System.EventHandler(this.VentanaUsuarios_MouseHover);
             // 
-            // button2
+            // buttonViaticos
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Location = new System.Drawing.Point(148, 25);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 154);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonViaticos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonViaticos.BackgroundImage")));
+            this.buttonViaticos.Location = new System.Drawing.Point(148, 25);
+            this.buttonViaticos.Name = "buttonViaticos";
+            this.buttonViaticos.Size = new System.Drawing.Size(127, 154);
+            this.buttonViaticos.TabIndex = 2;
+            this.buttonViaticos.UseVisualStyleBackColor = true;
+            this.buttonViaticos.Click += new System.EventHandler(this.button2_Click);
+            this.buttonViaticos.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
+            this.buttonViaticos.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
             // button3
             // 
@@ -203,7 +208,7 @@
             this.viaticosToolStripMenuItem,
             this.montoDeViaticosDeTodosLosUsuariosToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.toolStripMenuItem1.Text = "Viaticos";
             // 
             // montoDeViaticosDeLosUsuariosToolStripMenuItem
@@ -232,7 +237,7 @@
             this.reparacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reparacionesToolStripMenuItem1});
             this.reparacionesToolStripMenuItem.Name = "reparacionesToolStripMenuItem";
-            this.reparacionesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reparacionesToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.reparacionesToolStripMenuItem.Text = "Vehiculos";
             // 
             // reparacionesToolStripMenuItem1
@@ -247,7 +252,7 @@
             this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.combustibleGastadoToolStripMenuItem});
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // combustibleGastadoToolStripMenuItem
@@ -280,13 +285,13 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonViaticos);
+            this.Controls.Add(this.VentanaUsuarios);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Dashboard";
             this.Text = "Dashboard";
-            this.Load += new System.EventHandler(this.Dashboard_Load);
+            this.Load += new System.EventHandler(this.Dashboard_Load);            
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -296,8 +301,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button VentanaUsuarios;
+        private System.Windows.Forms.Button buttonViaticos;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;

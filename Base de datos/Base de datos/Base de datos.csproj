@@ -213,6 +213,12 @@
     <EmbeddedResource Include="Consultas\ContultaUsuariosViaticos.resx">
       <DependentUpon>ContultaUsuariosViaticos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.es-CR.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.es.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>

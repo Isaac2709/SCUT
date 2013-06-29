@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace Base_de_datos
 {
@@ -16,33 +17,18 @@ namespace Base_de_datos
 
 
         /// <summary>
-        /// 
+        /// Metodos para desactivar el boton de cerrar [X]
         /// </summary>
         [DllImport("user32.dll", EntryPoint = "GetSystemMenu")]
-
         private static extern IntPtr GetSystemMenu(IntPtr hwnd, int revert);
-
         [DllImport("user32.dll", EntryPoint = "GetMenuItemCount")]
-
         private static extern int GetMenuItemCount(IntPtr hmenu);
-
         [DllImport("user32.dll", EntryPoint = "RemoveMenu")]
-
         private static extern int RemoveMenu(IntPtr hmenu, int npos, int wflags);
-
         [DllImport("user32.dll", EntryPoint = "DrawMenuBar")]
-
         private static extern int DrawMenuBar(IntPtr hwnd);
-
         private const int MF_BYPOSITION = 0x0400;
-
         private const int MF_DISABLED = 0x0001;
-        
-        /// <summary>
-        /// 
-        /// </summary>
-
-
 
 
         public Dashboard()
@@ -52,11 +38,6 @@ namespace Base_de_datos
             //this.ControlBox = false;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void Dashboard_Load(object sender, EventArgs e)
         {
         IntPtr hmenu = GetSystemMenu(this.Handle, 0);
@@ -68,12 +49,6 @@ namespace Base_de_datos
 
         DrawMenuBar(this.Handle);               
         }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -194,9 +169,56 @@ namespace Base_de_datos
             Application.Exit();
         }
 
-        /*private void Dashboard_Load(object sender, EventArgs e)
+        private void VentanaUsuarios_MouseHover(object sender, EventArgs e)
         {
+            Thread t = new Thread(new ThreadStart(ThreadProc));
+            t.Start();
+            VentanaUsuarios.BackColor=System.Drawing.Color.Black;
+            
+            //Thread.Sleep(1);
+            //this.VentanaUsuarios.Size = new System.Drawing.Size(127, 154);
+            t.Join();
+            this.salirToolStripMenuItem.Text = "Salir";
+        }
 
-        }*/
+        public void ThreadProc()
+        {
+            //this.VentanaUsuarios.Size.Height;  
+            this.salirToolStripMenuItem.Text = "OLA";
+            //VentanaUsuarios.Width += 10;// = new Size(300, VentanaUsuarios.Size.Height);
+            Thread.Sleep(900);            
+        }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            this.salirToolStripMenuItem.Text = "OLA";
+            this.buttonViaticos.Location = new System.Drawing.Point(145, 23);            
+            this.buttonViaticos.Width += 6;
+            this.buttonViaticos.Height += 4;    
+            
+            //Thread t = new Thread(new ThreadStart(hilo1));
+            //t.Start();
+            //t.Join();
+            
+        }
+        public void hilo1()
+        {
+            for (int n = 0; n != 8; n+=2) {
+                this.buttonViaticos.Width += n;
+                this.buttonViaticos.Height += 6;
+                Thread.Sleep(10);
+            }
+            //VentanaUsuarios.Width += 10;// = new Size(300, VentanaUsuarios.Size.Height);
+            //Thread.Sleep(400);
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            Thread.Sleep(100);            
+            this.buttonViaticos.Width -= 6;
+            this.buttonViaticos.Height -= 4;
+            this.buttonViaticos.Location = new System.Drawing.Point(148, 25);
+        }
+
     }
 }

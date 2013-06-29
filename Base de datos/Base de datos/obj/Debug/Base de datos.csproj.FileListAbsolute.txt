@@ -201,3 +201,9 @@ C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos
 C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\obj\Debug\Base_de_datos.LogIn.resources
 C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\obj\Debug\Base_de_datos.Properties.Resources.resources
 C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\obj\Debug\Base de datos.csproj.GenerateResource.Cache
+C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\bin\Debug\es-CR\Base de datos.resources.dll
+C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\bin\Debug\es\Base de datos.resources.dll
+C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\obj\Debug\Base_de_datos.LogIn.es-CR.resources
+C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\obj\Debug\Base_de_datos.LogIn.es.resources
+C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\obj\Debug\es-CR\Base de datos.resources.dll
+C:\Users\Isaac\Dropbox\Estudios\Visual\Projects\SCUT\Base de datos\Base de datos\obj\Debug\es\Base de datos.resources.dll

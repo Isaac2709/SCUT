@@ -14,9 +14,8 @@ namespace Base_de_datos
     public partial class LogIn : Form
     {
         public LogIn()
-        {
-            InitializeComponent();
-            this.KeyPreview = true;
+        {    
+            InitializeComponent();            
         }        
 
         public void iniciarSeccion() {
@@ -28,23 +27,8 @@ namespace Base_de_datos
             }
             else
             {
-                label5.Text = "El usuario es incorrecto";
-                //System.Threading.Thread.Sleep(100);
-                //label5.Text = null;                
+                label5.Text = "El usuario es incorrecto";                             
             }
-        }
-
-        public void Entrar(object sender, System.Windows.Forms.KeyEventArgs e) {
-            if (e.KeyCode == Keys.Enter)
-            {
-                iniciarSeccion();
-            }
-        }
-
-
-        private void LogIn_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
