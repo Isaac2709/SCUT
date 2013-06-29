@@ -98,6 +98,7 @@
     <Compile Include="Data\Gastos.cs" />
     <Compile Include="Data\HorasExtras.cs" />
     <Compile Include="Data\Mantenimiento.cs" />
+    <Compile Include="Data\Metodos.cs" />
     <Compile Include="Data\SolicitudFichaSalida.cs" />
     <Compile Include="Data\Talleres.cs" />
     <Compile Include="Data\Usuario.cs" />

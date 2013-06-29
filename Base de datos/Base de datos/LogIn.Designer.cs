@@ -57,7 +57,6 @@
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -67,7 +66,6 @@
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Contraseña";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 
@@ -75,7 +73,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(154, 20);
             this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -84,7 +81,6 @@
             this.textBox2.Size = new System.Drawing.Size(154, 20);
             this.textBox2.TabIndex = 4;
             this.textBox2.UseSystemPasswordChar = true;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -129,7 +125,7 @@
             this.Controls.Add(this.button1);
             this.Name = "LogIn";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.LogIn_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Entrar);
             this.ResumeLayout(false);
             this.PerformLayout();
 

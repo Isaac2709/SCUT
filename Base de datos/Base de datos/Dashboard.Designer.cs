@@ -51,6 +51,7 @@
             this.reparacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combustibleGastadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -177,10 +178,11 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultasToolStripMenuItem});
+            this.consultasToolStripMenuItem,
+            this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(554, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(554, 25);
             this.menuStrip1.TabIndex = 13;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -191,7 +193,7 @@
             this.reparacionesToolStripMenuItem,
             this.usuariosToolStripMenuItem});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // toolStripMenuItem1
@@ -207,14 +209,14 @@
             // montoDeViaticosDeLosUsuariosToolStripMenuItem
             // 
             this.montoDeViaticosDeLosUsuariosToolStripMenuItem.Name = "montoDeViaticosDeLosUsuariosToolStripMenuItem";
-            this.montoDeViaticosDeLosUsuariosToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
+            this.montoDeViaticosDeLosUsuariosToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
             this.montoDeViaticosDeLosUsuariosToolStripMenuItem.Text = "Monto de Viaticos de los Usuarios";
             this.montoDeViaticosDeLosUsuariosToolStripMenuItem.Click += new System.EventHandler(this.montoDeViaticosDeLosUsuariosToolStripMenuItem_Click);
             // 
             // viaticosToolStripMenuItem
             // 
             this.viaticosToolStripMenuItem.Name = "viaticosToolStripMenuItem";
-            this.viaticosToolStripMenuItem.Size = new System.Drawing.Size(252, 22);
+            this.viaticosToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
             this.viaticosToolStripMenuItem.Text = "Viaticos";
             this.viaticosToolStripMenuItem.Click += new System.EventHandler(this.viaticosToolStripMenuItem_Click);
             // 
@@ -255,6 +257,14 @@
             this.combustibleGastadoToolStripMenuItem.Text = "Combustible Gastado";
             this.combustibleGastadoToolStripMenuItem.Click += new System.EventHandler(this.combustibleGastadoToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(45, 21);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,6 +286,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Dashboard";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -307,6 +318,7 @@
         private System.Windows.Forms.ToolStripMenuItem reparacionesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem combustibleGastadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
 
     }
 }

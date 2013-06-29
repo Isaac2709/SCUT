@@ -15,8 +15,8 @@ namespace Base_de_datos.Data
         /// <returns>SqlConnection</returns>
         public SqlConnection conectar()
         {
-            string sc = "Data Source=MAFALDA;Initial Catalog=SCUT;Persist Security Info=True;User ID=sa;Password=12345";                                  
-            //string sc = "Data Source=Isaac-PC;Initial Catalog=SCUT;Persist Security Info=True;User ID=sa;Password=12345";
+            //string sc = "Data Source=MAFALDA;Initial Catalog=SCUT;Persist Security Info=True;User ID=sa;Password=12345";                                  
+            string sc = "Data Source=Isaac-PC;Initial Catalog=SCUT;Persist Security Info=True;User ID=sa;Password=12345";
             SqlConnection conn = new SqlConnection(sc);
             conn.Open();
             return (conn);
