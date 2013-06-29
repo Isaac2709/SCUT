@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7405FC92-5663-4330-AAEB-44BEA93A571A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Base_de_datos</RootNamespace>
+    <AssemblyName>Base de datos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agregar_Licencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_Licencia.Designer.cs">
+      <DependentUpon>Agregar_Licencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_telefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_telefono.Designer.cs">
+      <DependentUpon>Agregar_telefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Centro de costos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Centro de costos.Designer.cs">
+      <DependentUpon>Centro de costos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaReparaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaReparaciones.Designer.cs">
+      <DependentUpon>ConsultaReparaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaUsuariosCombustibles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaUsuariosCombustibles.Designer.cs">
+      <DependentUpon>ConsultaUsuariosCombustibles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaViaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaViaticos.Designer.cs">
+      <DependentUpon>ConsultaViaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\MontoViaticosUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\MontoViaticosUsuarios.Designer.cs">
+      <DependentUpon>MontoViaticosUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ContultaUsuariosViaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ContultaUsuariosViaticos.Designer.cs">
+      <DependentUpon>ContultaUsuariosViaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Agencia.cs" />
+    <Compile Include="Data\CentroCosto.cs" />
+    <Compile Include="Data\Garantia.cs" />
+    <Compile Include="Data\Gastos.cs" />
+    <Compile Include="Data\HorasExtras.cs" />
+    <Compile Include="Data\Mantenimiento.cs" />
+    <Compile Include="Data\SolicitudFichaSalida.cs" />
+    <Compile Include="Data\Talleres.cs" />
+    <Compile Include="Data\Usuario.cs" />
+    <Compile Include="Data\Vehiculos.cs" />
+    <Compile Include="Data\Viaticos.cs" />
+    <Compile Include="SCUTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCUTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agencias.Designer.cs">
+      <DependentUpon>Agencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ficha_solicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ficha_solicitud.Designer.cs">
+      <DependentUpon>Ficha_solicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Garantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Garantia.Designer.cs">
+      <DependentUpon>Garantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gastos.Designer.cs">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HorasExtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HorasExtra.Designer.cs">
+      <DependentUpon>HorasExtra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Talleres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Talleres.Designer.cs">
+      <DependentUpon>Talleres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehiculos.Designer.cs">
+      <DependentUpon>Vehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viaticos.Designer.cs">
+      <DependentUpon>Viaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nueva_Licencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nueva_Licencia.Designer.cs">
+      <DependentUpon>Nueva_Licencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Agregar_Licencia.resx">
+      <DependentUpon>Agregar_Licencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_telefono.resx">
+      <DependentUpon>Agregar_telefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Centro de costos.resx">
+      <DependentUpon>Centro de costos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaReparaciones.resx">
+      <DependentUpon>ConsultaReparaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaUsuariosCombustibles.resx">
+      <DependentUpon>ConsultaUsuariosCombustibles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaViaticos.resx">
+      <DependentUpon>ConsultaViaticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\MontoViaticosUsuarios.resx">
+      <DependentUpon>MontoViaticosUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ContultaUsuariosViaticos.resx">
+      <DependentUpon>ContultaUsuariosViaticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agencias.resx">
+      <DependentUpon>Agencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ficha_solicitud.resx">
+      <DependentUpon>Ficha_solicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Garantia.resx">
+      <DependentUpon>Garantia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gastos.resx">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HorasExtra.resx">
+      <DependentUpon>HorasExtra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Talleres.resx">
+      <DependentUpon>Talleres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehiculos.resx">
+      <DependentUpon>Vehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viaticos.resx">
+      <DependentUpon>Viaticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nueva_Licencia.resx">
+      <DependentUpon>Nueva_Licencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SCUTDataSet.xsc">
+      <DependentUpon>SCUTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SCUTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SCUTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SCUTDataSet.xss">
+      <DependentUpon>SCUTDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
